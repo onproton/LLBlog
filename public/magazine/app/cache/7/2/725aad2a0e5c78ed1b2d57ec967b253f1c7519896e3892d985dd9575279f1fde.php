@@ -16,53 +16,89 @@ class __TwigTemplate_725aad2a0e5c78ed1b2d57ec967b253f1c7519896e3892d985dd9575279
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "
-<!-- Footer -->
-        <footer class=\"large-12 columns\">
-            <hr />
-            <div class=\"large-6 columns\">
-                <p>";
-        // line 6
-        echo $this->env->getExtension('Bolt')->trans("This website is <a href='%url%' target='_blank' title='Sophisticated, lightweight & simple CMS'>Built with Bolt</a>.", array("%url%" => "http://bolt.cm"));
-        echo "
-                </p>
-            </div>
-            <div class=\"large-6 columns\">
-                <ul class=\"inline-list\">
-                    ";
-        // line 11
-        echo $this->env->getExtension('Bolt')->menu($this->env);
-        echo "
-                </ul>
-            </div>
-        </footer>
-    </div>
-</div>
+        echo "<!-- THE FOOTER -->
+   <footer style=\"margin-top: 200px\">
+      <div class=\"eighty sixty\" id=\"footerWrapper\">
+         <!-- GIVES A WIDTH OF 80% or 60% -->
+   <!--       <div class=\"footerList\">
+            <ul>
+               <li><a class=\"listHeader\" href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Tincidunt</a></li>
+               <li><a href=\"\">Sollicitudin</a></li>
+               <li><a href=\"\">Mauris Pharetra</a></li>
+               <li><a href=\"\">Suspendisse Accumsan</a></li>
+               <li><a href=\"\">Hendrerit Ipsum</a></li>
+               <li><a href=\"\">Molestie</a></li>
+               <li><a href=\"\">Libero Commodo</a></li>
+               <li><a href=\"\">Elementum Dignissim</a></li>
+               <li><a href=\"\">Consequat</a></li>
+            </ul>
+         </div>
+         <div class=\"footerList\">
+            <ul>
+               <li><a class=\"listHeader\" href=\"\">Boring links</a></li>
+               <li><a href=\"\">Terms of Use</a></li>
+               <li><a href=\"\">Privacy Policy</a></li>
+               <li><a href=\"\">Partner With Us</a></li>
+               <li><a href=\"\">Abuse Desk</a></li>
+               <li><a href=\"\">Contact Us</a></li>
+            </ul>
+            <ul class=\"secondList\">
+               <li><a class=\"listHeader socialMedia\" href=\"\">Social Media</a></li>
+               <li><a href=\"\">Facebook</a></li>
+               <li><a href=\"\">Twitter</a></li>
+               <li><a href=\"\">Instagram</a></li>
+               <li><a href=\"\">LinkedIn</a></li>
+            </ul>
+         </div>
+         <div class=\"footerList\">
+            <ul>
+               <li><a class=\"listHeader\" href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+            </ul>
+         </div>
+         <div class=\"footerList\">
+            <ul>
+               <li><a class=\"listHeader\" href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+            </ul>
+            <ul class=\"secondList\" id=\"lastFooterList\">
+               <li><a class=\"listHeader\" href=\"\">Partners</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+               <li><a href=\"\">Lucky Lookers</a></li>
+            </ul>
+         </div>
+         <div class=\"footerList\">
+         </div> -->
+        <!--  <br class=\"clearIt\"> -->
+         <div id=\"copyRight\">
+            <p> &copy; S&amp;G Innovation LTD  Registration Number 9533002. All Rights Reserved.</p>
+            <p>LuckyLookers - The ideal way to sell and buy</p>
+         </div>
+      </div>
+   </footer>
 
-    <script src=\"";
-        // line 18
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "javascripts/jquery-2.1.0.min.js\"></script>
-    <script src=\"";
-        // line 19
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "javascripts/foundation.min.js\"></script>
-    <script src=\"";
-        // line 20
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "javascripts/modernizr.js\"></script>
-
-    ";
-        // line 24
-        echo "    <script src=\"";
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "javascripts/jquery.magnific-popup.min.js\"></script>
-
-    <script src=\"";
-        // line 26
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "javascripts/app.js\" async defer></script>
-
+   <script>
+      \$('.handle').on('click', function(){
+            \$('#mainNav').toggleClass('showing');
+      });
+   </script>
 </body>
 </html>
 ";
@@ -73,13 +109,8 @@ class __TwigTemplate_725aad2a0e5c78ed1b2d57ec967b253f1c7519896e3892d985dd9575279
         return "_footer.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  63 => 26,  57 => 24,  52 => 20,  48 => 19,  44 => 18,  34 => 11,  26 => 6,  19 => 1,);
+        return array (  19 => 1,);
     }
 }
