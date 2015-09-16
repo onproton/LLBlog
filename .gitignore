@@ -1,4 +1,3 @@
 public/magazine/app/config/config.yml
-public/magazine/app/cache/* 
-public/magazine/app/cache/**
+public/magazine/app/cache/
 
